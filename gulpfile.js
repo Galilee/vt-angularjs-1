@@ -1,4 +1,4 @@
-'usr strict';
+'use strict';
 
 var gulp = require('gulp');
 var browserify = require('browserify');
