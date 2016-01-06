@@ -1,0 +1,16 @@
+{
+  "name": "vt-angularjs-1",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-ui-router": "^0.2.15"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0",
+    "gulp-streamify": "^1.0.2",
+    "resolve": "^1.1.6",
+    "streamify": "^0.2.5",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
