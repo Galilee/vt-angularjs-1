@@ -13,11 +13,11 @@ module.exports = ['$stateProvider', '$urlRouterProvider', '_CONST',
     $stateProvider
       .state(routes.HOME, {
         url: '/home',
-        templateUrl: env.templatePath('common/content.html')
+        templateUrl: env.templatePath('home.html')
       })
       .state(routes.DEMO, {
-        url: '/home',
-        templateUrl: env.templatePath('home.html'),
+        url: '/demo',
+        templateUrl: env.templatePath('demo.html'),
       })
     ;
 
