@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Veille Techno: AngularJS 1/2</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/white.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css">
+  <link rel="stylesheet" href="own.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h2 class="title">AngularJS</h2>
+        <div class="content">
+          <p><i>Les bases du Framework One Page</i></p>
+          <img data-src="angular.png">
+        </div>
+        <p><small><a href="https://github.com/ubikz">Ubikz.</a> _ 7 janvier 2016 - by <strong>Galilée</strong></small></p>
+      </section>
+      <section>
+        <h3 class="title">Sommaire</h3>
+        <div class="content">
+          <ol>
+            <li class="main">Angular JS
+              <ol>
+                <li class="second">Présentation</li>
+                <li class="second">Pré-requis et installation</li>
+                <li class="second">Concepts</li>
+              </ol>
+            </li>
+            <li class="main">Exemples concret
+              <ol>
+                <li class="second">Présentation du code</li>
+                <li class="second">Exécution du code</li>
+              </ol>
+            </li>
+            <li class="main">Questions ?</li>
+          </ol>
+        </div>
+      </section>
+      <section>
+        <section>
+          <h3 class="title">1 - AngularJS - <small class="subtitle">Présentation</small></h3>
+          <div class="content">
+            <ul>
+              <li class="main">Création en 2k9</li>
+              <li class="main">Framework <strong>Javascript</strong> de Google pour faire du SPA (single page app)</li>
+              <li class="main"><u>Objectif : </u> rendre le HTML dynamique</li>
+              <li class="main">Extensible et structuré en couches</li>
+              <li class="main">Communauté très présente</li>
+              <li class="main">AngularJS 2 en <strong>beta</strong></li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h3 class="title">1 - AngularJS - <small class="subtitle">Pré-requis et installation</small></h3>
+          <div class="content">
+            <ul>
+              <li class="main">Nécessite une bonne connaissance du <strong>Javascript</strong></li>
+              <li class="main">Nécessite une bonne connaissance du <strong>MVC</strong></li>
+              <li class="main">Plusieurs possibilités:
+                <ul>
+                  <li class="second">Utilisation de npm: <strong>npm install angular --save</strong></li>
+                  <li class="second">Ajout du cdnjs dans le html (<a href="https://cdnjs.com/libraries/angular.js/">https://cdnjs.com/libraries/angular.js/</a>)</li>
+                  <li class="second">Inclusion de la librairie en dur</li>
+                  <li class="second">etc.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h3 class="title">1 - AngularJS - <small class="subtitle">Concepts</small></h3>
+          <div class="content">
+            <ul>
+              <li class="main">Architecture MVC
+                <ul>
+                  <li class="second">Dois-je expliquer ? Même principe mais appliqué au FRONT uniquement</li>
+                  <li class="second">C'est un MVC de la couche "vue" classique que nous connaissons</li>
+                </ul>
+              </li>
+              <li class="main">Data Binding
+                <ul>
+                  <li class="second">Binding du model object des controllers dans le html</li>
+                  <li class="second">Il ne s'agit que d'un model utilisé dan sles vues (bonnes pratiques)</li>
+                </ul>
+              </li>
+              <li class="main">Injection de dépendances
+                <ul>
+                  <li class="second">Classique à tout développement et évite l'instanciation redondante</li>
+                </ul>
+              </li>
+              <li class="main">Manipulation du DOM (ex: directive)
+                <ul>
+                  <li class="second">Pseudo macros permettant la maintenabilité, testabilité et facilité d'utilisation du DOM</li>
+                  <li class="second">Directives déjà présentes (ng-show, ng-hide, ng-repease, ng-if, etc.)</li>
+                  <li class="second">Possibilité de créer ses propres directives</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+      <section>
+        <h3 class="title">2 - Exemples concrets</h3>
+        <div class="content">
+          <ol>
+            <li class="main">Présentation du code
+              <ul>
+                <li class="second"><a href="https://github.com/Galilee/vt-angularjs-1">https://github.com/Galilee/vt-angularjs-1</a></li>
+              </ul>
+            </li>
+            <li class="main">Exécution du code
+              <ul>
+                <li class="second">cf. démonstration</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section>
+        <h1 class="title">Questions ?</h1>
+      </section>
+    </div>
+  </div>
+  <script src="//cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+  <script src="//cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.min.js"></script>
+  <script>
+    Reveal.initialize({
+      dependencies: [{
+        src: '//cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js',
+        async: true,
+        callback: function() {
+          hljs.initHighlightingOnLoad();
+        }
+      }]
+    });
+  </script>
+</body>
+
+</html>
