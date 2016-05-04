@@ -58,3 +58,4 @@ gulp.task('vendor', [], function() {
 gulp.task('default', ['vendor', 'application'], function() {
   console.log('Fin des tâches automatisées');
 });
+
